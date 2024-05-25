@@ -1,0 +1,67 @@
+[[language]]
+name = "javascript"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "js" ] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "json" ] }
+
+[[language]]
+name = "markdown"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "md" ] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "jsx" ] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc"]
+file-types = ["tsx"]
+language-servers = ["deno-lsp", "emmet-ls"]
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "tsx" ] }
+auto-format = true
+
+[[language]]
+name = "html"
+scope = "text.html.basic"
+injection-regex = "html"
+file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "vto"]
+block-comment-tokens = { start = "<!--", end = "-->" }
+language-servers = [ "vscode-html-language-server", "emmet-ls" ]
+auto-format = true
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "typescript"
+language-id = "typescript"
+scope = "source.ts"
+injection-regex = "^(ts|typescript)$"
+file-types = ["ts"]
+shebangs = ["deno"]
+roots = ["deno.json", "deno.jsonc", "package.json"]
+formatter = { command = 'deno', args = ["fmt", "-", "--ext", "ts" ] }
+auto-format = true
+language-servers = ["deno-lsp"]
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+
+[language-server.deno-lsp.config.deno]
+enable = true
+suggest.imports.hosts = { "https://deno.land" = true }
+inlayHints.parameterNames.enabled = "all"
+inlayHints.parameterTypes.enabled = true
+inlayHints.variableTypes.enabled = true
+inlayHints.propertyDeclarationTypes.enabled  = true
+inlayHints.functionLikeReturnTypes.enabled = true
+inlayHints.enumMemberValues.enabled = true
+
+[language-server.emmet-ls]
+command = "emmet-ls"
+args = ["--stdio"]
