@@ -16,7 +16,7 @@ This package exports two functions:
 Deno:
 
 ```ts
-import { multiline, multilineCustom } from "jsr:@lvl8/multiline-string^0.1.1";
+import { multiline, multilineCustom } from "jsr:@lvl8/multiline-string^0.1.2";
 ```
 
 Node / other runtimes:

@@ -1,3 +1,6 @@
+/**
+ * Default prefix
+ */
 const MARGIN_PREFIX = "|" as const;
 
 export type MultilineTagFunction = (
@@ -5,6 +8,9 @@ export type MultilineTagFunction = (
   ...args: unknown[]
 ) => string;
 
+/**
+ * Returns a tag function with a custom prefix.
+ */
 function createMultilineTagFunction(
   prefix: string = MARGIN_PREFIX,
 ): MultilineTagFunction {
