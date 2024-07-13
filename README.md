@@ -3,8 +3,8 @@
 Help improve readability of complex multiline strings.
 
 Inspired by
-[https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/trim-margin.html](Kotlin's
-`trimMargin`) function.
+[Kotlin's `trimMargin`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/trim-margin.html)
+function.
 
 This package exports two functions:
 
