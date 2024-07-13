@@ -1,11 +1,12 @@
-name: Publish
+name: CI/CD
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  publish:
+  ci-cd:
     runs-on: ubuntu-latest
 
     permissions:

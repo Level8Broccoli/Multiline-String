@@ -1,8 +1,8 @@
-/**
- * Default prefix
- */
 const MARGIN_PREFIX = "|" as const;
 
+/**
+ * Type definition for generic tag function.
+ */
 export type MultilineTagFunction = (
   strings: TemplateStringsArray,
   ...args: unknown[]

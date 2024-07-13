@@ -1,5 +1,8 @@
 # Multiline-String
 
+[![JSR @lvl8/multiline-string](https://jsr.io/badges/@lvl8/multiline-string)](https://jsr.io/@lvl8/multiline-string)
+[![CI/CD](https://github.com/Level8Broccoli/Multiline-String/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Level8Broccoli/Multiline-String/actions/workflows/ci-cd.yml)
+
 Help improve readability of complex multiline strings.
 
 Inspired by
@@ -16,7 +19,7 @@ This package exports two functions:
 Deno:
 
 ```ts
-import { multiline, multilineCustom } from "jsr:@lvl8/multiline-string^0.1.2";
+import { multiline, multilineCustom } from "jsr:@lvl8/multiline-string^0.1.3";
 ```
 
 Node / other runtimes:
