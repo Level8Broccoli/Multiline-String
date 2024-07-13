@@ -1,4 +1,4 @@
-import { assertEquals } from "@std/assert";
+import { assertEquals } from "jsr:@std/assert@^1.0.0";
 import { multiline, multilineCustom } from "./multiline-string.ts";
 
 // Single line
@@ -113,10 +113,10 @@ Deno.test("Nested usage, complex", () => {
 // Custom prefix
 
 Deno.test("Custom prefix", () => {
-  const str = multilineCustom("$")`
-    $first line
-    $${multiline`middle line`}
-    $last line
+  const str = multilineCustom("#")`
+    #first line
+    #${multiline`middle line`}
+    #last line
   `;
   assertEquals(str, "first line\nmiddle line\nlast line");
 });

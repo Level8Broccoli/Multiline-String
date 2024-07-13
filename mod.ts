@@ -1,1 +1,1 @@
-export * from "./multiline-string.ts";
+export * from "./src/multiline-string.ts";

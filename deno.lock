@@ -17,10 +17,5 @@
       }
     }
   },
-  "remote": {},
-  "workspace": {
-    "dependencies": [
-      "jsr:@std/assert@^1.0.0"
-    ]
-  }
+  "remote": {}
 }
