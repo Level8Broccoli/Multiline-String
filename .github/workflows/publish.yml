@@ -15,5 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.43.5
+
+      - run: deno fmt --check
+
+      - run: deno lint
+
+      - run: deno test 
+
       - name: Publish package
         run: npx jsr publish
