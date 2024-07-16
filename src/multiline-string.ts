@@ -51,7 +51,7 @@ function createMultilineTagFunction(
 
 /**
  * Tag function that removes first and last empty lines.
- * If the prefix is used on a line (default: "|"), everthing from the start of the line until (including) the first occurence of the prefix is removed.
+ * If the prefix is used on a line (default: "|"), everything from the start of the line until (including) the first occurence of the prefix is removed.
  *
  * To use a custom prefix, use the constructor function `multilineCustom(prefix: string)`.
  */
